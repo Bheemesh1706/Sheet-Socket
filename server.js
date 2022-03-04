@@ -13,6 +13,6 @@ io.on("connection", (socket) => {
    
   });
 
-http.listen(PORT, () => {
+http.listen(process.env.PORT || 3001, () => {
     console.log(`Server running on PORT:${PORT}`);
   });
